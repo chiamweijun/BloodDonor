@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/Violet"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/donate_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/donate_title"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/AntiqueWhite"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/donate_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/donate_subtitle"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="639dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/donate_background"
+            android:orientation="vertical">
+
+// Location1
+
+            <LinearLayout
+                android:id="@+id/textView01"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/location1_img"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/location1_img"
+                    app:srcCompat="@drawable/location1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/location1_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/location1_text"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/location1_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/location1_des"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/location1_open"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:autofillHints="Location"
+                        android:ems="10"
+                        android:hint="@string/location"
+                        android:inputType="textShortMessage"
+                        android:text="@string/location1_open"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:onClick="openLocation1"
+                        android:text="@string/open"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+//Location 2
+
+            <LinearLayout
+                android:id="@+id/textView02"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+
+                <ImageView
+                    android:id="@+id/location2_img"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/location2_img"
+                    app:srcCompat="@drawable/location2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/location2_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/location2_text"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/location2_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/location2_des"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/location2_open"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:autofillHints="Location"
+                        android:ems="10"
+                        android:hint="@string/location"
+                        android:inputType="textShortMessage"
+                        android:text="@string/location2_open"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:onClick="openLocation2"
+                        android:text="@string/open"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+//Location 3
+
+            <LinearLayout
+                android:id="@+id/textView03"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+
+                <ImageView
+                    android:id="@+id/location3_img"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/location3_img"
+                    app:srcCompat="@drawable/location3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/location3_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/location3_text"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/location3_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/location3_des"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/location3_open"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:autofillHints="Location"
+                        android:ems="10"
+                        android:hint="@string/location"
+                        android:inputType="textShortMessage"
+                        android:text="@string/location3_open"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:onClick="openLocation3"
+                        android:text="@string/open"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
